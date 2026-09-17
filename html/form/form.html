@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML</title>
+    <style>
+        sup{
+            color:red;
+
+        }
+        form{
+            width: 70%;
+            margin: auto;
+            border: 1px solid black;
+            padding: 20px;
+            box-shadow: 5px 5px 10px gray;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <form action="">
+        <div>
+           <label for="1">Fullname: <sup>*</sup></label> 
+            <input type="text" id="1" placeholder="enter youe name" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="2">Mobie: <sup>*</sup></label>
+            <input type="tel" id="2" placeholder="enter your mobile number">
+        </div>
+        <br>
+
+        <div>
+            <label for="3">Email: <sup>*</sup></label>
+            <input type="email" id="3" placeholder="enter youe mail">
+        </div>
+        <br>
+
+        <div>
+            <label for="4">Password: <sup>*</sup></label>
+            <input type="password" placeholder="at least 8 digit">
+        </div>
+        <br>
+
+        <div>
+            mention your resume<br>
+            <input type="file">
+        </div>
+        <br>
+
+        <div>
+            feedback<br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="write something..."></textarea>
+        </div>
+        <br>
+
+        <div>
+            <label for="6">Aadhar Number</label>
+            <input type="number" id="6" placeholder="enter your aadhar">
+        </div>
+        <br>
+
+        <div>
+            Gender <br>
+            <input type="radio" name="gender" checked>male
+            <input type="radio" name="gender">female
+            <input type="radio" name="gender">other
+        </div>
+        <br>
+
+        <div>
+            <label for="7">YOP</label><br>
+            <select>
+                <label name="" id="7">YOP</label>
+                <option value="" selected disabled>--Enter your YOP--</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>  
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>  
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+            </select>
+        </div>
+<br>
+        <div>
+            <input type="checkbox" id="9">
+            <label for="9">agree with tc</label>
+        </div>
+        <br>
+
+        <button type="submit">Button</button>
+        
+
+        <button type="reset">Cancel</button>
+    </form>
+</body>
+</html>
