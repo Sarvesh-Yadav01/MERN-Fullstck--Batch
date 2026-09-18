@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.c1{
+    font-size: 100px;
+    font-weight: 900;
+    font-style: italic;
+    font-family: "Roboto Mono", monospace;
+
+}
+
+.c2{
+    font-size: 100px;
+    font-weight: 900;
+
+}
+

@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    background-color: black;
+
+}
+
+/*section{
+    min-height: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.s1{
+    background-image: url(https://imgd.aeplcdn.com/370x208/n/cw/ec/200003/gravite-exterior-right-front-three-quarter-6.jpeg?isig=0&q=80);
+    background-attachment:fixed;
+}
+
+.s2{
+    background-image: url(https://imgd.aeplcdn.com/370x208/n/cw/ec/217141/punch-ev-exterior-right-front-three-quarter-327.png?isig=0&q=80);
+    
+}
+
+.s3{
+    background-image: url(https://imgd.aeplcdn.com/370x208/n/cw/ec/139269/e-vitara-exterior-right-front-three-quarter-5.png?isig=0&q=80);
+    background-attachment:fixed;
+}
+
+.s4{
+    background-image: url(https://imgd.aeplcdn.com/370x208/n/cw/ec/193017/sierra-exterior-right-front-three-quarter-61.png?isig=0&q=80);
+}*/
+
+h1{
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to bottom right, orange, white, green);
+    text-align: center;
+}
