@@ -29,6 +29,12 @@
    3. Padding Box
    4. Content Box
 
+# Flex Box:
+
+   It is 1 dimension layout module
+
+* flex Terminology:-
+      
              
 
 ## JavaScript
