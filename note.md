@@ -35,8 +35,152 @@
 
 * flex Terminology:-
       
-             
+# Grid Container Property
+-> It is 2 Dimension Layout Module System
 
+# Grid  Trminology
+1. Grid row line
+2. Grid Column Line
+3. Row
+4. column
+5. Track
+6. Cell
+7. Grid Container
+8. Grid items
+
+# Grid Item Property
+ 1. grid-column-start:__1_____
+
+ 2. gird-column-end:__8_____
+
+ 3. grid-column:___1____ / ____8___
+ 
+ 4. gird-row-start:__2__
+
+ 5. grid-row-end:___5__
+
+ 6. grid-row:__2___/____5___
+
+ 7. justify-self:____
+    1] stretch(default)
+    2] start
+    3] end
+    4] center
+
+ 8. align-item:_____
+    1] stretch(default)
+    2] start
+    3] end
+    4] center
+
+ 9. place-self:_end___/_center__
+       
+        or
+
+     place-self:__center____
+
+10. grid-area:__any name what ever you want you can write here ___
+
+# How to center a card  ***
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+             
+# What is difference between display: none ,display: visibility , display: hidden ***
+
+# Transition Property
+1. Transition-property:____
+      1. all4
+      2. any css proprty
+
+# Animation
+ 1. Animation-name:__;
+
+ 2. Animation-duration:_____;
+     1. 1s
+     2. 1000ms
+
+ 3. Animation-timing-function:____
+     1. ease(default)
+     2. ease-in
+     3. ease-out
+     4. rase-in-out
+     5. linear
+
+ 4. Animation-delay:____
+     1. 1s
+     2. 1000ms
+
+ 5. Animation-iteration-count:___
+     1. 1
+     2. 2
+     3. infinite
+
+
+ 6. Animation-direction:____
+      1. normal
+      2. reverse
+      3. alternate
+      4. alternate-reverse
+
+ 7. Animation-play-state:____
+      1. running
+      2. paused
+
+ 8. Animation-fill-mode:____
+      1. farward
+      2. backward
+
+# shortcut of animation:-
+
+  animation: name duration time-function delay iteration count direction playstate fillmode
+
+# css unit
+  1. Absolute Units(Fixid units)
+     1. pixel
+     2. inch
+     3. cm
+     4. mm
+
+  2. Relative units(can change)
+     1. percentage(%)  ->[width, height]
+     2. em  ->[Typography Spacinng, border]
+     3. rem
+     4. vw(viewport)
+     5. vh(viewport height)
+     6. Vmax(view Max)
+     7. Vmin(viewport min)
+
+# Responsive Design
+
+   1. Desktop First Approach = max-width
+   2. Mobile First Apporach = Min-width
+
+
+ * @media screen and (min-width:576)
+                                  |--------> to fit screen size
+   1. all     
+   2. print
+   3. speech 
+   4. screen
+
+ * different screen scize 
+  extra small size(xs) = 
+  small screen size(sm) = 576px
+  large(lg) = 992px
+  extra large(xl) = 1200px
+  extra extra large(xxl) = 1400px
+
+
+
+   
+
+  
+
+
+
+
+2.       
 ## JavaScript
 1. javascript is scripting and programming language
 2. JavaScript is object based language
@@ -45,8 +189,15 @@
 5. javascript is syncrhonous single threaded language because has only one call stack
 6. javascript can also asynchronos task with the help of event loop and queues
 
-# JavaScript Runtime Enviornment
-JavaScript Runtime Environment provide an environment where we excute our javascript code
+# what is javaScript
+1. js is scripting and programming language
+2. js is Object based language
+3. js is dynamically type language
+4. js is synchronous single thread language but is can perform a   synchronous operation with the help of event loop and queues
+5. js is both compiled and interpreted language
+
+# JavaScript Runtime Enviornment(JRE)
+JavaScript Runtime Environment that provide an environment where we run our javascript code
 
 # Types of JRE
 it is 2 types
@@ -57,7 +208,7 @@ it is 2 types
 set- ExecutionPolicy -ExecutePolicy RemoteSigned -Scope CurrentUser
 
 # Token 
-1. it is smallestof programming language 
+1. it is smallest unit of programming language 
 # Example      let a = 10;
 1. let = keyword
 2. a = identifier
@@ -73,14 +224,38 @@ set- ExecutionPolicy -ExecutePolicy RemoteSigned -Scope CurrentUser
        Example:- 
         var, let, const, function, if , else, switch, case, break, continue, do , while, for, in, delete, try, catch, finally , throw, extend
 
-# notes 
+*** notes 
        keywords are always in written in lower case or letter
 
 2. Identifier 
         idetifiers are use givien names
         i) name of a variable
+          explample:-1
+                const user = "Raj";
+
+          ex2 :-
+              const fullName = "Sarvesh Yadav";   ----> lower camel casing
+               
+
         ii) name of function 
+
+           ex1 
+              function sum (a , b){
+
+              }
+
+           ex2
+              fuction addSum(a, b){
+
+              }                         --------->lower camel casing
+
+
         iii) name of a class and  clssmembers
+
+           ex1:-
+              class Employee{
+                                  -------> upper camel casing
+              }
 
         Example 1:- let user = "Rig"; 
                         |
@@ -93,6 +268,13 @@ set- ExecutionPolicy -ExecutePolicy RemoteSigned -Scope CurrentUser
                                       |                               
                                       |--operator
 
+4. Literals:- 
+        Literals are different type of value that is used in writing a program
+
+5. Puncution:-
+        Punctuation are also know as separaters which tell about the line ending of a code.
+
+
 # what is difference b/w "var", "let", and "const" lekword
 
 1. Var
@@ -101,7 +283,16 @@ set- ExecutionPolicy -ExecutePolicy RemoteSigned -Scope CurrentUser
 -> var declaration with var keyword goes to the global scope.
 -> variable declared with "var" keyword support hoisting and does not belong to temporal dead zone (TDZ)
 example-
-       var  a = 10;
+           initialize
+           |-----|
+       var a = 10; 
+      |-----|
+      declaration
+
+       var a = 100;
+       var a = 1000;
+       a = 10000;
+       console.log(a);
 
 2. let
 -> one time declaration 
@@ -109,15 +300,31 @@ example-
 -> variable declared with "let" keyword goes to block scope or script scope
 -> variable declared with "let" keyword support hoisting but belong to temporal dead zone(TDZ)
 example-
-       let b = 20;   
+            initialize
+           |-----|
+       let b = 20; 
+      |-----|
+      declaration
+
+           b = 200
+           b = 2000;
+           console.log(b);  
 
 3. const 
 -> one time declaration
 -> one time initialization
 -> variable declared with "const" keyword goes to block scope or script scope
 -> ariable declared with "const" keyword support hoisting but belong to temporal dead zone(TDZ)
-example
-       const c = 30;
+example:-
+
+       initialize
+           |-----|
+       const c = 30; 
+      |-----|
+      declaration
+       
+       error c = 300;
+       error c = 3000;
 
 # Operator
 
@@ -128,6 +335,10 @@ example
 
    1. Unary Operator:-
       i) Increment / Decrement 
+   * their are two types
+      1. pre increment/pre decrement (example1 let a  = ++10)
+      2. post increment/post decrement (example1 let a  = 10++)
+
       ii) Logical Not (!)
 
    2. Binary Operator:- 
@@ -179,6 +390,30 @@ example 2 :-
        
        ii). here we use inbulid method
            1. String()  2. Boolean()  3. Number() 4.BigInt()   5. Symbol
+
+   * note:- type of NaN is number     
+
+# what is truthly and falsy;
+* truthly:-
+      the value converted or treated as true is know as truthly value such as [], {}, -1, "sarvesh"
+
+* falsy:-
+      the valuse converted as teated as false is know as falsy value such as +0, -0, 0.0, 0n, nan, null, undefined
+      ""(empty string)
+
+# Boolean Conversion      
+
+* Number to Boolean conversion
+  Ex1.
+  const a = 10;
+  const bool = boolean(a);
+  console.log(bool);------>true
+  console.log(type of (bool));------->boolean
+  
+  Ex.2
+  const str = "hello";
+  const bool = Boolean(str);
+  console.log(bool);------>ture
 
 # Type of Literals
   1. Primitive Literals
