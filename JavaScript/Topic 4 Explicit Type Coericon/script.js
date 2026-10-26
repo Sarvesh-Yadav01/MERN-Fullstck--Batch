@@ -40,7 +40,7 @@ const x = 0;
 const y = Boolean(x);
 console.log(y);
 console.log(typeof y);
-*/
+
 
 const username = prompt("Enter fullname");
 const age = +prompt("Enter your age");
@@ -49,3 +49,5 @@ console.log(username, typeof username);
 console.log(age, typeof age);
 
 //typeof null is object
+*/
+

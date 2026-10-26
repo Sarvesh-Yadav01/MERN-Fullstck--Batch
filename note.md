@@ -351,8 +351,28 @@ example:-
          logical and(&&)
          Logical or / Double Pipeline(||)
 
-    3. Ternaey Operator:-
+    3. Ternary Operator:-
        Condtional Operator(Operand1 ? Operend2 : Operand3)
+
+    4. Relational Operator
+
+    1. what is difference between == (loose equality) and ===(strict equaltiy)
+
+    Loose Equality(==);-
+         == compres the value where the type conversion is needed
+
+         EX.1:-
+            const a = 10;
+            const b = "10"
+            console.log(a==b); ----->true
+
+    Stict Equality(===):-
+         === check data type and value ,it has no type conversion    
+
+          EX.1:-
+            const a = 10;
+            const b = "10"
+            console.log(a==b); ----->false     
 
 # TYPE COERCION:-
        To Convert one type of data into another type with the help of js engine is know as type coercion.
@@ -415,6 +435,16 @@ example 2 :-
   const bool = Boolean(str);
   console.log(bool);------>ture
 
+  Ex.3
+  cosnt a = 0.0;
+  cosnt b = Boolean(a);
+  console.log(b); ------>false
+
+  Ex.4
+  cosnt a = " ";
+  const b = Boolean(a);
+  console.log(b); ------->false
+
 # Type of Literals
   1. Primitive Literals
   -> Primitive value are single value literals.
@@ -432,8 +462,121 @@ example 2 :-
 
   example:- const num = [10, 20, 30, 40];
                   num[1] =   200;
-                  new num= [10,200,30,40 ]------>output            
+                  new num= [10,200,30,40 ]------>output    
+# what is array
+1. Array in object in  javaScript
+2. It is non premitive type literal
+3. It is block  of memory which is used to store multiple type of value (any type of literl) in same memory block
+4. Array size is dynamic (size is not fixed like another language)
+5. Value store inside array are refered as array element
+6. If we try to access the index that is greater than the arrary length we will get undefined   
 
+# array method
+ 1. map()
+ 2. push() :- It inserts one or more elements to the end of an arrary
+              It modify the original array
+              It return the new lenght of array.
+
+ 3. pop() :- It remove the last element from an array.
+             It modifies the original array.
+             It returns the removed element
+
+ 4. unshift() :- It inserts one or more elements to the beginning of an array
+                 It modifies the original array
+                 It return the new length of array
+
+ 5. shift() :- It remove first element from an array.
+               It modifies the original array
+               It return the removed element.
+
+ 6. splice() :- 
+ 7. slice()
+ 8. reverse()
+ 9. indexOf()
+ 10. includes()
+ 11. sort()
+ 12. forEach()
+ 13. filter()
+ 14. find()
+ 15. findIndex()
+ 16. redue()
+ 17. some()
+ 18. every()
+ 19. Array.isArray()
+ 20. Array.form()
+
+# differece between map and filter
+1. Map:- 1 It is used to iterate over array and transform each element
+         2 It is a higher order function
+         3 It always return a new array of the same length.
+
+2. Filter:- 1 It is used iterate over an array and selected based on a condition
+            2 It is a higher order function
+            3 It return new array that may be shorter than the original (return empty array)  
+
+# Find the difference between find and filter
+1. find:- 1 It is uesd to iterate over an array and return the first element 
+            that satisfies the condition
+          2. It is higher order function
+          3. It return a single element or undefined if no match is found
+
+2. filter:- 1. It is used to iterate over an array and return all element that
+               satisfy the conditon
+            2. It is higher order function
+            3. It retur the new array (empty array[] if no match found)   
+
+3. Reduce:- example1
+
+  const arr [10, 20, 30, 40, 50]
+
+  const total = arr.reduce((acc, element) =>{
+                return acc;
+  } intitial value) 
+
+ 1. Note:- acc means accumulator
+           element means array element
+           initial value = 0           
+
+
+# Object in js
+1. Object is non-premitive data, referece based data.
+2. Object is block of code which have state (proprties) and behaviour (method) and it    can store heterogenious type of data 
+3. In object, we can store data in key value pairs and each key value pair is selected by comma
+
+example:-
+         const user = {
+            fullName = "Sarvesh";
+            age = 20;
+            city = "jaunpur"
+         }
+
+         greet: ()=>{
+            console.log("hello EveryOne);
+         }
+
+# Destructing
+            Destructing is process extracting the value of an array or object is know as Destructing
+
+# What is shallow copy deep copy
+1. The copy of object that is directly connected with original object is called as shallow copy
+2. Here, we store refrence of original obejct in a new variable, now new variable start pointing to same memory block
+
+1. The copy in which original object is not connnect with its copy is called deep copy  
+2. Here we create seprate empty object after that we copy key value pair of original obejct inti new empty object        
+
+# Rest and spread Operator
+...variable = ...variable
+            ||
+   REST-----||------>SPREAD
+
+1. Rest:-
+       The rest operator collect the multiple value into a single array or object
+
+2. Spread:-
+       The spread operator expand element of a array or properties of an object into another array object or function call
+
+       
+       
 # node js
 ## what is module fuction executor ? **
 -> In node js (CommonJs modules), the module function executor refer too the automatic function wrapper that node.js uses to execute every module.
